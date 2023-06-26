@@ -1,5 +1,6 @@
 export enum Routes {
     basic = '/',
     pagination = '/pagination',
-    loadMore = '/load-more'
+    loadMore = '/load-more',
+    infiniteScroll = '/infinite-scroll'
 }

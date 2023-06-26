@@ -7,6 +7,7 @@ const Navbar = () => {
             <Link className='text-decoration-none' to={Routes.basic}>Basic Fetch</Link>
             <Link className='text-decoration-none' to={Routes.pagination}>Paginate With Prefetct</Link>
             <Link className='text-decoration-none' to={Routes.loadMore}>Load More</Link>
+            <Link className='text-decoration-none' to={Routes.infiniteScroll}>Infinite Scroll</Link>
         </nav>
     )
 }
