@@ -1,12 +1,12 @@
-import { SWRConfiguration } from "swr";
-import axios from 'axios'
+import { SWRConfiguration } from 'swr';
+import axios from 'axios';
 
-axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com'
+axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com';
 
-export const fetcher = (url: string) => axios.get(url).then(res => res.data)
+export const fetcher = (url: string) => axios.get(url).then((res) => res.data);
 
 export const swrConfigObject: SWRConfiguration = {
-    refreshInterval: 0,
-    revalidateOnFocus: false,
-    fetcher: fetcher
-}
+  refreshInterval: 0,
+  revalidateOnFocus: false,
+  fetcher: fetcher,
+};

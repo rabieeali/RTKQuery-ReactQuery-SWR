@@ -1,4 +1,3 @@
-
 import { Routes, Route } from 'react-router-dom'
 import BasicPage from 'src/pages/Basic'
 import Layout from 'src/components/Layout'

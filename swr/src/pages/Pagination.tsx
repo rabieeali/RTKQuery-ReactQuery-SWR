@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { fetcher } from 'src/api';
+import Alert from 'src/components/Alert';
 import Card from 'src/components/Card';
+import Spinner from 'src/components/Spinner';
 import { Post } from 'src/types';
 import useSWR, { preload } from 'swr'
 
@@ -20,8 +22,8 @@ const PaginationPage = () => {
         }
     }, [pageIndex])
 
-    if (isLoading) return <div style={{ inset: 0 }} className="spinner-border position-absolute m-auto" role="status"></div>
-    if (error) return <div className="alert alert-danger" role="alert">{error.message}</div>
+    if (isLoading) return <Spinner />;
+  if (error) return <Alert message={error.message} />;
 
     return (
         <>
